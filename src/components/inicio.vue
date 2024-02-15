@@ -4,7 +4,6 @@
 
     <div>
       <b-button @click="openModal">Registrar película</b-button>
-      <b-button @click="openDeleteModal" variant="danger">Eliminar película</b-button>
 
 
       <b-modal id="modal-1" title="Registro de películas" v-model="showModal">
@@ -36,12 +35,7 @@
         </b-form>
       </b-modal>
     </div>
-    <b-modal ref="deleteModal" id="deleteModal" title="Eliminar Película">
-      <p>Ingrese el nombre de la película que desea eliminar:</p>
-      <b-form-input v-model="deleteMovieName"></b-form-input>
-      <b-button @click="confirmDelete" variant="danger">Eliminar</b-button>
-      <b-button @click="cancelDelete">Cancelar</b-button>
-    </b-modal>
+   
   </div>
 </template>
   
